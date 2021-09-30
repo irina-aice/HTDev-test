@@ -39,9 +39,7 @@
     "start": "gulp"
   },
   "browserslist": [
-    "last 2 versions",
-    "not dead",
-    "not ie <= 11"
+    "defaults"
   ],
   "editorconfig-cli": [
     "*.json",
@@ -55,6 +53,7 @@
     "node": "14.15.0"
   },
   "dependencies": {
-    "modern-normalize": "^1.1.0"
+    "modern-normalize": "^1.1.0",
+    "swiper": "^7.0.7"
   }
 }

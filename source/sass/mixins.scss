@@ -1,0 +1,24 @@
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin container {
+	width: 100%;
+	max-width: 1250px;
+	padding-left: 15px;
+	padding-right: 15px;
+	box-sizing: border-box;
+	margin: 0 auto;
+
+	@media (min-width: $width-tablet) {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	@media (min-width: $width-desktop) {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}

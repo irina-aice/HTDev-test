@@ -55,6 +55,15 @@ const scripts = () => {
 
 exports.scripts = scripts;
 
+const vendorScripts = () => {
+	return gulp.src([
+		"node_modules/swiper/swiper-bundle.js",
+	])
+		.pipe(concat("vendor.js"))
+		.pipe(gulp.dest("build/js"))
+		.pipe(sync.stream());
+}
+
 //Images
 
 const images = () => {
@@ -152,8 +161,8 @@ const build = gulp.series(
     styles,
     html,
     scripts,
-    vendorScripts,
-    sprite,
+		vendorScripts,
+		sprite,
     copy,
     images,
     createWebp
@@ -167,8 +176,8 @@ exports.default = gulp.series(
     styles,
     html,
     scripts,
-    vendorScripts,
-    sprite,
+		vendorScripts,
+		sprite,
     copy,
     createWebp
   ),

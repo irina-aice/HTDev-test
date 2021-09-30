@@ -1,0 +1,33 @@
+.card {
+	background-color: $white;
+
+	&--inteko,
+	&--nowadays {
+		margin-right: 20px;
+	}
+
+	&--projects,
+	&--employees {
+		position: relative;
+		margin-left: 20px;
+		transform: translateY(-28px);
+		z-index: 2;
+	}
+}
+
+.card__title {
+	margin: 0;
+}
+
+.card__subtitle {
+	margin: 0;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+@media (min-width: $width-desktop) {
+	.card__subtitle {
+		font-size: 18px;
+		line-height: 26px;
+	}
+}

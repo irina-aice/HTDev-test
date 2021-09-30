@@ -1,11 +1,186 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>HTDev-test</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTDev-test</title>
+	<link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-  <main></main>
+	<main class="main">
+		<a href="#">
+			<svg width="106" height="30">
+				<use xlink:href="img/sprite.svg#logo"></use>
+			</svg>
+		</a>
+		<div class="main__inner">
+			<ul class="main__list">
+				<li class="main__item main__item--inteko">
+					<div class="card card--inteko">
+						<h2 class="card__title title">Кто мы</h2>
+						<p class="card__text">«ИНТЕКО» – прогрессивный девелопер с государственным участием.</p>
+						<p class="card__text">Компания активно участвует в развитии городов: возводит современные жилые комплексы и
+							социально значимые
+							объекты, создает комфортные общественные пространства, формируя новые точки притяжения и современную среду
+							для комфортной жизни.</p>
+						<p class="card__text">Компания включена в перечень системообразующих организаций строительной отрасли.
+							Президент компании –
+							Александр Николаев является членом Общественного совета при Минстрое РФ.</p>
+					</div>
+				</li>
+				<li>
+					<h2 class="title">Наши проекты</h2>
+					<p>За 19 лет на рынке недвижимости компания реализовала более 80 проектов в Москве, Ростове-на-Дону,
+						Санкт-Петербурге и Ленинградской области и построила более 5 млн кв. м.</p>
+					<div class="js-slider swiper slider">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide slider__content">
+								<img src="img/projects_mobile.jpg" alt="Трехэтажный дом с видом на речку">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/projects_2_mobile.jpg" alt="Трехэтажный дом с видом на речку">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/projects_mobile.jpg" alt="Трехэтажный дом с видом на речку">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/projects_2_mobile.jpg" alt="Трехэтажный дом с видом на речку">
+							</div>
+						</div>
+						<div class="js-slider-pagination slider__pagination slider__pagination--image swiper-pagination"></div>
+						<button class="js-slider-prev slider__button"></button>
+						<button class="js-slider-next slider__button"></button>
+					</div>
+					<div class="card card--projects">
+						<p class="card__subtitle">Среди знаковых проектов:</p>
+						<p class="card__text">Легендарный элитный комплекс в Хамовниках «Садовые кварталы», ЖК бизнес-класса «West
+							Garden», ЖК
+							комфорт-класса «Вестердам», ЖК «Шуваловский», ЖК «DOMINION», ЖК «Гранд-паркъ», Здания МГУ имени М. В.
+							Ломоносова, Авторский дом премиум-класса на Врубеля, 4, Элитный комплекс апартаментов Balchug Residence,
+							элитный комплекс апарт-резиденций Balchug Viewpoint.</p>
+					</div>
+					<p>Из года в год проекты «ИНТЕКО» побеждают в престижных российских и международных отраслевых премиях, что
+						подтверждает признание профессионального сообщества и любовь наших клиентов. Компания стала обладателям уже
+						более 35 наград и продолжает запускать новые яркие проекты на рынке недвижимости.</p>
+				</li>
+				<li class="main__item main__item--nowadays">
+					<h2 class="title">Интеко сейчас</h2>
+					<ul class="main__list">
+						<li>Центральный офис «ИНТЕКО» расположен в Москве, также у компании есть представительства в Ростове-на-Дону
+							и
+							Санкт-Петербурге. На данный момент «ИНТЕКО» находится в стадии реализации стратегической программы
+							трансформации:
+						</li>
+						<li>
+							<span>Более</span>
+							<span>2000 человек</span>
+							<span>Общая численность персонала</span>
+						</li>
+						<li>
+							<span>около</span>
+							<span>1,2 млн кв. м.</span>
+							<span>Объем текущего строительства</span>
+						</li>
+					</ul>
+					<div class="card card--nowadays">
+						<ul>
+							<li>В 2019 г. состоялся ребрендинг</li>
+							<li>Компания одной из первых в России перешла на работу по новым правилам строительной отрасли,
+								предполагающей использование эскроу-счетов
+							</li>
+							<li>Происходит комплексная цифровизация бизнес-процессов</li>
+							<li>Запускаются новые масштабные девелоперские проекты</li>
+							<li>Компания реализует нестандартные имиджевые проекты, поддерживает творчество современных российских
+								художников по созданию крупных уличных скульптур
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<h2 class="title">Основные принципы работы с персоналом</h2>
+					<div class="js-slider-staff swiper slider">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide slider__content">
+								<div class="card">
+									<p class="card__subtitle">Непрерывное развитие персонала</p>
+									<p class="card__text">«ИНТЕКО» стремится к формированию обучающей рабочей среды, в которой новые
+										знания и опыт сотрудники получают естественным путем – в рамках текущей деятельности, в процессах
+										рабочего взаимодействия,
+										через участие в девелоперских и трансформационных проектах. На внутрикорпоративных ресурсах
+										формируется база знаний
+										и инструментарий, с помощью которых сотрудники могут самостоятельно изучать интересующие их темы. В
+										компании есть у кого учиться: представители «ИНТЕКО» являются авторитетными экспертами, чье мнение
+										публикуют
+										РБК, «Коммерсантъ», «Ведомости», ТАСС, «Интерфакс», «Строительная газета» и чьи интервью транслируют
+										Business FM и РБК-ТВ.</p>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="card">
+									<p class="card__subtitle">Обеспечение достойного уровня жизни сотрудников</p>
+									<p class="card__text">«ИНТЕКО» заботится о сотрудниках и предлагает широкий компенсационный пакет.
+										Система материальной мотивации состоит из фиксированной (оклад) и переменной (премия) частей и
+										адаптирована под актуальные задачи бизнеса, обеспечивая четкую взаимосвязь между результатами труда
+										каждого отдельного работника, бизнес-результатами компании в целом и вознаграждением. Социальный
+										пакет регулярно пересматривается, подстраиваясь под актуальные запросы сотрудников.</p>
+								</div>
+							</div>
+							<div class="swiper-slide">Slide 3</div>
+						</div>
+						<div class="js-slider-pagination-staff slider__pagination swiper-pagination"></div>
+						<button class="js-slider-prev slider__button"></button>
+						<button class="js-slider-next slider__button"></button>
+					</div>
+				</li>
+				<li>
+					<h2 class="title">Компания предлагает своим сотрудникам</h2>
+					<div class="js-slider-employees swiper slider">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide slider__content">
+								<img src="img/employees_mobile.jpg" alt="Сотрудники на соревнованиях радуются победе">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/employees_2_mobile.jpg" alt="Сотрудники на соревнованиях радуются победе">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/employees_mobile.jpg" alt="Сотрудники на соревнованиях радуются победе">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/employees_2_mobile.jpg" alt="Сотрудники на соревнованиях радуются победе">
+							</div>
+						</div>
+						<div class="js-slider-pagination-employees slider__pagination slider__pagination--image swiper-pagination"></div>
+						<button class="js-slider-prev slider__button"></button>
+						<button class="js-slider-next slider__button"></button>
+					</div>
+					<div class="card card--employees">
+						<ul>
+							<li>работу в центре Москвы, в 1 минуте ходьбы от ст. метро «Красные ворота»</li>
+							<li>полное соблюдение норм трудового законодательства</li>
+							<li>возможность адаптации графика работы под индивидуальные потребности</li>
+							<li>возможность удаленного режима работы</li>
+							<li>своевременную выплату заработной платы</li>
+							<li>прозрачную систему KPI и премирования по итогам работы за год</li>
+							<li>корпоративные программы скидок и выгодные предложения от партнеров</li>
+							<li>материальную поддержку</li>
+							<li>добровольное медицинское страхование (включая стоматологию, страхование выезжающих за рубеж, а также
+								льготную стоимость страховки для членов семьи сотрудника)
+							</li>
+							<li>широкие возможности для совместного времяпрепровождения вне работы: спортивные и интеллектуальные игры
+								(в
+								компании есть самообразующиеся группы по футболу, бегу и интеллектуальным викторинам), корпоративные
+								праздники, участие в мероприятиях, проводимых Советом молодых специалистов строительной отрасли г.
+								Москвы,
+								и
+								многое другое.
+							</li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</main>
+	<script src="js/vendor.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
