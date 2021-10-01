@@ -8,6 +8,7 @@
 
 	&--nowadays {
 		margin-right: 20px;
+		padding: 29px 35px 30px 20px;
 	}
 
 	&--projects,
@@ -23,7 +24,14 @@
 	}
 
 	&--staff {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
 		padding: 36px 21px 46px 20px;
+	}
+
+	&--employees {
+		padding: 33px 20px 34px 20px ;
 	}
 }
 
@@ -78,4 +86,24 @@
 		font-size: 18px;
 		line-height: 26px;
 	}
+}
+
+.card__list {
+	@include reset-list;
+}
+
+.card__list li {
+	position: relative;
+	padding-left: 20px;
+}
+
+.card__list li::before {
+	content: "";
+	position: absolute;
+	display: inline-block;
+	height: 1px;
+	width: 15px;
+	left: 0;
+	top: 9px;
+	background-color: $violet;
 }
