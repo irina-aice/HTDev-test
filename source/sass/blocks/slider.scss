@@ -1,3 +1,25 @@
+.slider--projects,
+.slider--employees {
+	margin-right: 20px;
+}
+
+@media (min-width: $width-desktop) {
+	.slider--projects {
+		//width: 73.6%;
+		margin: 0;
+	}
+}
+
+.slider--staff {
+	margin-left: 20px;
+}
+
+@media (min-width: $width-desktop) {
+	.slider--staff {
+		margin-left: 60px;
+	}
+}
+
 .slider__pagination--image {
 	transform: translateY(-40px);
 }

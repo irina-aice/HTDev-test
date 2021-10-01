@@ -1,0 +1,22 @@
+.about {
+	@include reset-list;
+	display: flex;
+	justify-content: space-between;
+}
+
+.about__list {
+	@include reset-list;
+}
+
+@media (min-width: $width-desktop) {
+	.about__list {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+@media (min-width: $width-desktop) {
+	.about__item--information {
+		width: 40.2%;
+	}
+}
