@@ -1,18 +1,12 @@
 .about {
 	@include reset-list;
 	display: flex;
-	//justify-content: space-between;
 	padding: 23px 57px 48px 20px;
 }
 
-.about__list {
-	@include reset-list;
-}
-
 @media (min-width: $width-desktop) {
-	.about__list {
-		display: flex;
-		justify-content: space-between;
+	.about {
+		padding-left: 60px;
 	}
 }
 
@@ -21,22 +15,21 @@
 }
 
 @media (min-width: $width-desktop) {
-	.about__item--information {
-		width: 40.2%;
+	.about__item + .about__item {
+		margin-left: 93px;
 	}
 }
 
-.about__element + .about__element {
-	margin-top: 17px;
+.about__item--information br {
+	display: none;
 }
 
-.about__thing {
-	text-transform: uppercase;
-}
+@media (min-width: $width-desktop) {
+	.about__item--information {
+		max-width: 492px;
+	}
 
-.about__number {
-	font-size: 36px;
-	font-weight: 700;
-	line-height: 32px;
-	text-transform: uppercase;
+	.about__item--information br {
+		display: block;
+	}
 }

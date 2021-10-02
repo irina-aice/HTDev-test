@@ -17,9 +17,30 @@
 	text-decoration: none;
 }
 
+.main__link-wrapper {
+	margin-top: 20px;
+}
+
+@media (min-width: $width-desktop) {
+	.main__link-wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin: 80px 60px 40px 60px;
+	}
+}
+
 .main__link {
 	display: inline-block;
-	margin-top: 20px;
+	&--earth {
+		display: none;
+	}
+}
+
+@media (min-width: $width-desktop) {
+	.main__link--earth {
+		display: inline-block;
+	}
 }
 
 .main img {
@@ -63,13 +84,32 @@
 		min-height: 767px;
 		background-image: url("../img/nowadays_desktop.jpg");
 	}
+
+	.main__item--employees {
+		padding-bottom: 288px;
+	}
 }
 
 .main__block-content {
 	padding: 39px 26px 28px 30px;
 }
 
+@media (min-width: $width-desktop) {
+	.main__block-content {
+		max-width: 703px;
+		margin-left: 330px;
+		padding: 104px 0 59px 0;
+	}
+}
+
 .main__winners {
 	margin: 0;
 	padding: 29px 23px 42px 20px;
+}
+
+@media (min-width: $width-desktop) {
+	.main__winners {
+		margin-left: 330px;
+		padding: 57px 0 50px 0;
+	}
 }

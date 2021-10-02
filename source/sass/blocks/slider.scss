@@ -5,8 +5,11 @@
 
 @media (min-width: $width-desktop) {
 	.slider--projects {
-		//width: 73.6%;
 		margin: 0;
+	}
+
+	.slider--employees {
+		margin-top: 50px;
 	}
 }
 

@@ -4,11 +4,35 @@
   font-weight: 700;
   line-height: 28px;
   color: $blue;
+
+	&--nowadays {
+		margin-left: 20px;
+	}
+
+	&--staff {
+		margin: 51px 27px 27px 21px;
+	}
+
+	&--employees {
+		margin: 59px 50px 28px 31px;
+	}
 }
 
 @media (min-width: $width-desktop) {
 	.title {
 		font-size: 32px;
 		line-height: 38px;
+
+		&--nowadays {
+			margin-left: 60px;
+		}
+
+		&--staff {
+			margin: 48px 0 54px 61px;
+		}
+
+		&--employees {
+			margin: 104px 0 104px 271px;
+		}
 	}
 }

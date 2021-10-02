@@ -1,0 +1,36 @@
+.about-statistic {
+	@include reset-list;
+}
+
+@media (min-width: $width-desktop) {
+	.about-statistic {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+.about-statistic__item + .about-statistic__item {
+	margin-top: 17px;
+}
+
+@media (min-width: $width-desktop) {
+	.about-statistic__item + .about-statistic__item {
+		margin-top: 0;
+		margin-left: 72px;
+	}
+}
+
+.about-statistic__thing {
+	text-transform: uppercase;
+}
+
+.about-statistic__number {
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 32px;
+	text-transform: uppercase;
+}
+
+.about-statistic__description {
+	display: block;
+}
