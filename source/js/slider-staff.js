@@ -1,7 +1,7 @@
 'use strict';
 
 (function (){
-	const slider = document.querySelector('.js-slider');
+	const slider = document.querySelector('.js-slider-staff');
 
 	if (!slider) {
 		return false;
@@ -16,7 +16,7 @@
 			el: pagination,
 			type: 'bullets',
 			clickable: true,
-			bulletClass: 'slider__pagination-bullet',
+			bulletClass: 'slider__pagination-bullet--staff',
 			bulletActiveClass: 'slider__pagination-bullet--active',
 			bulletElement: 'span',
 		},

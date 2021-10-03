@@ -70,5 +70,26 @@
 @media (min-width: $width-desktop) {
 	.slider__button {
 		display: block;
+		position: absolute;
+		z-index: 1;
+		padding: 0;
+		background-color: transparent;
+		border: 0;
+		cursor: pointer;
+	}
+
+	.slider--projects .slider__button {
+		right: 60px;
+		bottom: 60px;
+	}
+
+	.slider--staff .slider__button {
+		right: 60px;
+		top: 49px;
+	}
+
+	.slider--employees + .slider__button {
+		left: 60px;
+		bottom: -160px;
 	}
 }

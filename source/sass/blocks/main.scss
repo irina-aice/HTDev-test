@@ -66,10 +66,57 @@
 		background-position: top right;
 	}
 
+	&--inteko,
+	&--projects,
+	&--nowadays,
+	&--employees {
+		position: relative;
+	}
+
 	&--nowadays {
 		padding-bottom: 144px;
 		background-image: url("../img/nowadays_mobile.jpg");
-		background-position: bottom right;
+		background-position: bottom 10px right;
+	}
+
+	&--inteko::before,
+	&--projects::before,
+	&--nowadays::before,
+	&--employees::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 10px;
+		height: 100%;
+		width: 1px;
+		background-color: $gray;
+	}
+
+	&--nowadays::before {
+		top: auto;
+		bottom: 0;
+		height: 300px;
+	}
+
+	&--projects::after,
+	&--nowadays::after {
+		content: "";
+		position: absolute;
+		left: 10px;
+		bottom: 0;
+		height: 1px;
+		width: calc(100% - 10px);
+		background-color: $gray;
+	}
+
+	&--employees::after {
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 1px;
+		width: 10px;
+		background-color: $gray;
 	}
 }
 
@@ -87,6 +134,35 @@
 
 	.main__item--employees {
 		padding-bottom: 288px;
+	}
+
+	.main__item {
+		&--inteko::before,
+		&--projects::before,
+		&--nowadays::before,
+		&--employees::before {
+			left: 298px;
+		}
+
+		&--inteko::after {
+			content: "";
+			position: absolute;
+			left: 298px;
+			bottom: 100%;
+			width: 1px;
+			height: 100px;
+			background-color: $gray;
+		}
+
+		&--projects::after,
+		&--nowadays::after {
+			left: 298px;
+			width: calc(100% - 298px);
+		}
+
+		&--employees::after {
+			width: 298px;
+		}
 	}
 }
 

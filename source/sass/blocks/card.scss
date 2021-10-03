@@ -2,13 +2,35 @@
 	background-color: $white;
 
 	&--inteko {
+		position: relative;
 		margin-right: 20px;
 		padding: 39px 22px 42px 20px;
 	}
 
 	&--nowadays {
+		position: relative;
 		margin-right: 20px;
 		padding: 29px 35px 30px 20px;
+	}
+
+	&--nowadays::before {
+		content: "";
+		position: absolute;
+		top: -20px;
+		left: 10px;
+		height: 20px;
+		width: 1px;
+		background-color: $gray;
+	}
+
+	&--nowadays::after {
+		content: "";
+		position: absolute;
+		top: -20px;
+		left: 0;
+		width: 10px;
+		height: 1px;
+		background-color: $gray;
 	}
 
 	&--projects,
@@ -64,6 +86,14 @@
 			width: 37.6%;
 			transform: translateY(-50px);
 			padding: 48px 64px 63px 49px;
+		}
+
+		&--nowadays::before {
+			left: 298px;
+		}
+
+		&--nowadays::after {
+			width: 298px;
 		}
 	}
 }

@@ -1,14 +1,14 @@
 'use strict';
 
 (function (){
-	const slider = document.querySelector('.js-slider');
+	const slider = document.querySelector('.js-slider-employees');
 
 	if (!slider) {
 		return false;
 	}
 
 	const pagination = slider.querySelector('.js-slider-pagination');
-	const nextElement = slider.querySelector('.js-slider-next');
+	const nextElement = slider.parentElement.querySelector('.js-slider-next');
 
 	new Swiper(slider, {
 		loop: true,
@@ -25,4 +25,5 @@
 			nextEl: nextElement,
 		},
 	});
+
 })();
