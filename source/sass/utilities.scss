@@ -1,0 +1,23 @@
+.nowrap {
+	white-space: nowrap;
+}
+
+.break-mobile {
+	display: block;
+}
+
+@media (min-width: $width-large-desktop) {
+	.break-mobile {
+		display: none;
+	}
+}
+
+.break-desktop {
+	display: none;
+}
+
+@media (min-width: $width-large-desktop) {
+	.break-desktop {
+		display: block;
+	}
+}

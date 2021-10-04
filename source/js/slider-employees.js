@@ -10,7 +10,7 @@
 	const pagination = slider.querySelector('.js-slider-pagination');
 	const nextElement = slider.parentElement.querySelector('.js-slider-next');
 
-	new Swiper(slider, {
+	new window.Swiper(slider, {
 		loop: true,
 		pagination: {
 			el: pagination,

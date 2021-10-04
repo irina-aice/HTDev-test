@@ -3,7 +3,7 @@
 	margin-right: 20px;
 }
 
-@media (min-width: $width-desktop) {
+@media (min-width: $width-large-desktop) {
 	.slider--projects {
 		margin: 0;
 	}
@@ -17,7 +17,7 @@
 	margin-left: 20px;
 }
 
-@media (min-width: $width-desktop) {
+@media (min-width: $width-large-desktop) {
 	.slider--staff {
 		margin-left: 60px;
 	}
@@ -27,8 +27,18 @@
 	height: auto;
 }
 
-.slider__pagination--image {
-	transform: translateY(-40px);
+@media (min-width: $width-large-desktop) {
+	.slider__pagination {
+		display: none;
+	}
+}
+
+.slider--projects .slider__pagination {
+	bottom: 34px;
+}
+
+.slider--employees .slider__pagination {
+	bottom: 47px;
 }
 
 .slider__pagination-bullet {
@@ -36,18 +46,15 @@
 	width: 6px;
 	height: 6px;
 	border-radius: 50%;
-	margin-left: 10px;
 	background-color: $white;
 	cursor: pointer;
 
 	&--staff {
-		display: inline-block;
-		width: 6px;
-		height: 6px;
-		border-radius: 50%;
-		margin-left: 10px;
 		background-color: $light-blue;
-		cursor: pointer;
+	}
+
+	&--staff + &--staff {
+		margin-left: 10px;
 	}
 
 	&--active {
@@ -57,9 +64,18 @@
 	}
 }
 
-@media (min-width: $width-desktop) {
-	.slider__pagination {
-		display: none;
+.slider__pagination-bullet + .slider__pagination-bullet {
+	margin-left: 9px;
+}
+
+.slider img {
+	max-width: 100%;
+	height: auto;
+}
+
+@media (min-width: $width-large-desktop) {
+	.slider img {
+		max-width: none;
 	}
 }
 
@@ -67,7 +83,7 @@
 	display: none;
 }
 
-@media (min-width: $width-desktop) {
+@media (min-width: $width-large-desktop) {
 	.slider__button {
 		display: block;
 		position: absolute;
@@ -80,7 +96,7 @@
 
 	.slider--projects .slider__button {
 		right: 60px;
-		bottom: 60px;
+		bottom: 57px;
 	}
 
 	.slider--staff .slider__button {
@@ -90,6 +106,6 @@
 
 	.slider--employees + .slider__button {
 		left: 60px;
-		bottom: -160px;
+		bottom: -182px;
 	}
 }

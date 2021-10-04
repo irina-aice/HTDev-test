@@ -4,13 +4,13 @@
 	&--inteko {
 		position: relative;
 		margin-right: 20px;
-		padding: 39px 22px 42px 20px;
+		padding: 34px 22px 40px 20px;
 	}
 
 	&--nowadays {
 		position: relative;
 		margin-right: 20px;
-		padding: 29px 35px 30px 20px;
+		padding: 25px 32px 27px 20px;
 	}
 
 	&--nowadays::before {
@@ -37,31 +37,32 @@
 	&--employees {
 		position: relative;
 		margin-left: 20px;
-		transform: translateY(-28px);
 		z-index: 2;
 	}
 
 	&--projects {
-		padding: 28px 35px 26px 20px;
+		padding: 22px 32px 23px 20px;
+		transform: translateY(-28px);
 	}
 
 	&--staff {
 		display: flex;
 		flex-direction: column;
 		height: 100%;
-		padding: 36px 21px 46px 20px;
+		padding: 32px 21px 40px 20px;
 	}
 
 	&--employees {
-		padding: 33px 20px 34px 20px ;
+		padding: 29px 19px 31px 19px;
+		transform: translateY(-40px);
 	}
 }
 
-@media (min-width: $width-desktop) {
+@media (min-width: $width-large-desktop) {
 	.card {
 		&--inteko {
 			width: 44%;
-			padding: 55px 38px 57px 59px;
+			padding: 49px 38px 54px 59px;
 		}
 
 		&--projects {
@@ -70,13 +71,13 @@
 			top: 36px;
 			width: 37.6%;
 			transform: none;
-			padding: 63px 65px 61px 51px;
+			padding: 57px 65px 56px 51px;
 		}
 
 		&--nowadays {
 			width: 37.6%;
-			margin-top: 92px;
-			padding: 68px 43px 65px 59px;
+			margin-top: 44px;
+			padding: 62px 43px 62px 59px;
 		}
 
 		&--employees {
@@ -85,14 +86,20 @@
 			top: 0;
 			width: 37.6%;
 			transform: translateY(-50px);
-			padding: 48px 64px 63px 49px;
+			padding: 44px 64px 61px 49px;
+		}
+
+		&--staff {
+			padding: 43px 59px 54px 50px;
 		}
 
 		&--nowadays::before {
+			top: -34px;
 			left: 298px;
 		}
 
 		&--nowadays::after {
+			top: -34px;
 			width: 298px;
 		}
 	}
@@ -106,30 +113,65 @@
 	margin: 0;
 	font-size: 14px;
 	line-height: 20px;
-
-	&--staff::after {
-		content: "";
-		display: block;
-		width: 100%;
-		height: 3px;
-		background: linear-gradient(to right, $blue 4%, $white 4% 6%, $blue 6% 10%, $white 10% 12%, $blue 12% 20%, $white 20% 22%, $blue 22% 35%, $white 35% 37%, $blue 37% 50%, $white 50% 52%, $blue 52%);
-	}
 }
 
-@media (min-width: $width-desktop) {
+@media (min-width: $width-large-desktop) {
 	.card__subtitle {
 		font-size: 18px;
 		line-height: 26px;
 	}
 }
 
+.card--staff .card__subtitle {
+	margin-bottom: 12px;
+}
+
+@media (min-width: $width-large-desktop) {
+	.card--staff .card__subtitle {
+		margin-bottom: 25px;
+	}
+}
+
+.card--staff .card__subtitle::after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 3px;
+	margin-top: 9px;
+	background: linear-gradient(to right, $blue 6px, $white 6px 12px, $blue 12px 28px, $white 28px 34px, $blue 34px 54px, $white 54px 60px, $blue 60px 84px, $white 84px 90px, $blue 90px 138px, $white 138px 144px, $blue 144px);
+}
+
+@media (min-width: $width-large-desktop) {
+	.card--staff .card__subtitle::after {
+		margin-top: 13px;
+		background: linear-gradient(to right, $blue 9px, $white 9px 16px, $blue 16px 38px, $white 38px 45px, $blue 45px 73px, $white 73px 81px, $blue 81px 113px, $white 113px 120px, $blue 120px 184px, $white 184px 191px, $blue 191px 317px, $white 317px 324px, $blue 324px 574px, $white 574px 581px, $blue 581px);
+	}
+}
+
+.card--staff .card__content {
+	max-height: 252px;
+	overflow-y: auto;
+}
+
 .card__list {
 	@include reset-list;
+}
+
+@media (min-width: $width-large-desktop) {
+	.card__list {
+		line-height: 24px;
+	}
 }
 
 .card__list li {
 	position: relative;
 	padding-left: 20px;
+}
+
+@media (min-width: $width-large-desktop) {
+	.card__list li {
+		padding-left: 24px;
+	}
 }
 
 .card__list li::before {
@@ -143,12 +185,33 @@
 	background-color: $violet;
 }
 
-@media (min-width: $width-desktop) {
-	.card__list {
-		line-height: 24px;
+@media (min-width: $width-large-desktop) {
+	.card__list li::before {
+		left: 1px;
+		top: 14px;
 	}
+}
 
-	.card__list--employees li + li {
+.card__list li + li {
+	margin-top: 8px;
+}
+
+@media (min-width: $width-large-desktop) {
+	.card__list li + li {
+		margin-top: 10px;
+	}
+}
+
+.card p {
+	margin: 0;
+}
+
+.card p + p {
+	margin-top: 8px;
+}
+
+@media (min-width: $width-large-desktop) {
+	.card p + p {
 		margin-top: 10px;
 	}
 }

@@ -7,9 +7,10 @@
 	color: black;
 }
 
-@media (min-width: $width-desktop) {
+@media (min-width: $width-large-desktop) {
 	.main {
 		font-size: 16px;
+		line-height: 24px;
 	}
 }
 
@@ -18,26 +19,28 @@
 }
 
 .main__link-wrapper {
-	margin-top: 20px;
+	margin-top: 23px;
+	margin-left: 20px;
 }
 
-@media (min-width: $width-desktop) {
+@media (min-width: $width-large-desktop) {
 	.main__link-wrapper {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		margin: 80px 60px 40px 60px;
+		margin: 86px 60px 34px 60px;
 	}
 }
 
 .main__link {
 	display: inline-block;
+
 	&--earth {
 		display: none;
 	}
 }
 
-@media (min-width: $width-desktop) {
+@media (min-width: $width-large-desktop) {
 	.main__link--earth {
 		display: inline-block;
 	}
@@ -49,12 +52,12 @@
 
 
 .main__inner {
-	margin-top: 30px;
-  background-color: $beige;
+	margin-top: 24px;
+	background-color: $beige;
 }
 
 .main__list {
-  @include reset-list;
+	@include reset-list;
 }
 
 .main__item {
@@ -74,9 +77,15 @@
 	}
 
 	&--nowadays {
-		padding-bottom: 144px;
+		padding-top: 35px;
+		padding-bottom: 165px;
 		background-image: url("../img/nowadays_mobile.jpg");
-		background-position: bottom 10px right;
+		background-position: bottom 21px right;
+	}
+
+	&--employees {
+		margin-top: 36px;
+		padding-top: 20px;
 	}
 
 	&--inteko::before,
@@ -120,7 +129,7 @@
 	}
 }
 
-@media (min-width: $width-desktop) {
+@media (min-width: $width-large-desktop) {
 	.main__item--inteko {
 		min-height: 570px;
 		padding-top: 65px;
@@ -129,11 +138,15 @@
 
 	.main__item--nowadays {
 		min-height: 767px;
+		padding-top: 43px;
+		padding-bottom: 90px;
 		background-image: url("../img/nowadays_desktop.jpg");
+		background-position: bottom 56px right;
 	}
 
 	.main__item--employees {
 		padding-bottom: 288px;
+		margin-top: 55px;
 	}
 
 	.main__item {
@@ -167,25 +180,37 @@
 }
 
 .main__block-content {
-	padding: 39px 26px 28px 30px;
+	padding: 32px 22px 10px 30px;
 }
 
-@media (min-width: $width-desktop) {
+@media (min-width: $width-large-desktop) {
 	.main__block-content {
 		max-width: 703px;
 		margin-left: 330px;
-		padding: 104px 0 59px 0;
+		padding: 96px 0 41px 0;
+	}
+
+	.main__block-content br {
+		display: none;
 	}
 }
 
 .main__winners {
-	margin: 0;
-	padding: 29px 23px 42px 20px;
+	margin: -3px 0 0 0;
+	padding: 0 23px 40px 30px;
 }
 
-@media (min-width: $width-desktop) {
+@media (min-width: $width-large-desktop) {
 	.main__winners {
 		margin-left: 330px;
-		padding: 57px 0 50px 0;
+		padding: 53px 0 49px 0;
+		max-width: 715px;
+	}
+}
+
+@media (min-width: $width-large-desktop) {
+	.main__logo {
+		height: auto;
+		width: 150px;
 	}
 }
